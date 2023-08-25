@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Color & Style</title>
+
+    <!-- Adding External Font from Google Font -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap" rel="stylesheet">
+    <style>
+        p{
+            font-style: italic;
+            font-family: cursive;
+            font-weight: 1000;
+            line-height: 50px;
+        }
+        /* Using External font */
+        h2{
+            font-family: 'Rubik Puddles', cursive;
+        }
+        #firstpara{
+            background-color: yellow;
+        }
+        /* rgb is red,green,blue */
+        #secondpara{
+            background-color: rgb(126, 32, 147);
+        }
+        /* rgba is red,green,blue and alpha. */
+        /* Alpha is for Transparency. */
+        #thirdpara{
+            background-color: rgba(66, 55, 33, 0.81);
+        }
+        /* Represented in hexadecimal first two digit is for red,then green and then blue and then alpha */
+        .firstclass{
+            background-color: #ffffffff;
+        }
+        #fourthpara{
+            background-color: hsl(0, 100%, 50%);
+            /* background-color: hsla(hue, saturation, lightness, alpha); */
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>This is the second heading</h2>
+    
+    <p id="firstpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quod voluptas blanditiis odit unde natus id necessitatibus officia eaque quia.</p>
+    
+    <p id="secondpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex repudiandae quos incidunt praesentium ad harum unde, blanditiis nesciunt quisquam fugiat beatae! Sint omnis iure vitae explicabo dolore optio ut, ipsam harum repellendus corrupti asperiores nobis doloremque minus dignissimos voluptatibus facilis aliquid. Modi assumenda, distinctio ratione quod quo doloribus facilis rem?</p>
+
+    <p id="thirdpara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, tempore?</p>
+
+    <p class="firstclass">Lorem ipsum dolor sit amet.</p>
+    <h3 class="firstclass">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+
+    <p id="fourthpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis aliquid omnis optio ducimus dicta iusto recusandae suscipit, deleniti velit enim, laboriosam ea dolorum, repellat illo? Voluptates culpa, totam et recusandae autem libero dolorum itaque a odit vel ut illum harum cumque atque mollitia esse ducimus. Itaque reprehenderit ab sit beatae ullam obcaecati, non eum mollitia adipisci sapiente perspiciatis inventore eius!</p>
+</body>
+</html>

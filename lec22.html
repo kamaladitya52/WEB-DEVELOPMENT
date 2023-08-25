@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows in CSS</title>
+    <style>
+
+        /* :root{
+            --primary-color: brown;
+            --custom-width: 330px;
+        } */
+        /* Once, globally generalised in root can be acces anywhere in the code. */
+
+        .container{
+            margin: 10px;
+            padding: 10px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            box-shadow: 5px 5px 5px 5px orange;
+            background-color: aqua;
+        }
+        .box{
+
+            /* --primary-color: brown;
+            --custom-width: 330px; */
+            /* Use the above syntax for genralisation of color , width,etc & its scope only valid between braces*/
+
+            border: 1px solid black;
+            /* box-shadow: 8px 8px 8px 8px greenyellow; */
+            
+            background-color:aquamarine;
+            /* box-shadow: inset 3px 3px rgb(94, 12, 176); */
+            /* box-shadow: -10px -60px var(--primary-color); */
+
+            /* box-shadow: 10px 15px 50px brown;
+             */
+            /* box-shadow: 10px 15px 5px 100px rgba(78, 158, 211, 0.7); */
+            box-shadow: inset 10px 15px brown;
+            /* box-shadow: 10px 15px red, 15px 8px green; */
+            /* For Multiple shadows use , */
+        }
+        h1{
+            text-shadow: 5px 5px  whitesmoke;
+            /* text-shadow: 8px 8px red, 15px 15px blue; */
+            /* For multiple text shadows use , */
+            text-align: center;
+             /* text-shadow: 12px 13px 1px white;
+             */
+            /* text-shadow: yellow 12px 13px 2px; */
+            /* text-shadow: white 12px 13px;
+             */
+            /* text-shadow: 12px 13px;
+             */
+             /* Default is black when no color is assigned. */
+        }
+        img{
+            border: 0px solid black;
+            box-shadow: -2px -2px 2px 2px rgb(232, 199, 12);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Shadow</h1>
+            <img src="logo.png" alt="logo">
+        </div>
+    </div>
+</body>
+</html>

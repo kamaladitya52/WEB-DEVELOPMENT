@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navcontainer{
+    width: 60%;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul, a{
+    text-decoration-style: none;
+}

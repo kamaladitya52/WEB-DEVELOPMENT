@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        *{
+            margin: 2px;
+            padding: 2px;
+        }
+        .container{
+            border: 2px solid black;
+            background-color: #da70d6;
+            display: flex; 
+            height: 300px;
+            /* By default flex direction is row. We can use flex-direction to  change it. */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+            /* By default it is nowrap selected */
+            /* flex-wrap: wrap-reverse; */
+            /* flex-wrap: nowrap; */
+
+             /* flex-direction: column;  */
+             /* All the justify-content is also working in column and here vertical axis is the main axis. */
+
+            /* justify-content: center; */
+            /* Justify Content is used to allign the conent along its main axis . In this row (flex-direction i.e.. by default) horizontal axis is the main axis. */
+
+            /* justify-content: end; */
+            /* All the boxes shift to end. */
+
+            /* justify-content: space-around; */
+            /* Space around the box is same (i.e.. from both side), that's why there is double space in between to box. */
+            
+            /* justify-content: space-between; */
+            /* First and last box goes to corner of the flex container */
+            
+            /* justify-content: space-evenly; */
+            /* Space is evenly distributed */
+
+            /* align-items: center; */
+            /* allign-item is used to allign the content along its cross axis. By default, vertical axis is cross axis in row(flex-direction) */
+            /* align-items: end; */
+            /* align-items: stretch; */
+            /* To see stretch working, we have to comment the height of the box. */
+
+            /* justify-content: center;
+            align-items: center; */
+            /* Use this above to make the content at center of the web page. */
+
+            align-content: start;
+            /* This helps to reduce the extra same between the contents */
+            /* align-content: center; */
+
+        }
+        .box{
+            height: 50px;
+            width: 200px;
+            border: 1px solid black;
+        }
+        #box1{
+            background-color: aqua;
+            /* order: 500; */
+            /* flex-shrink: 4; */
+            /* To check flex-shrink first comment the wrap.Then, we can see that box 1 is shrinking faster than other box */
+            
+        }
+        #box2{
+            background-color: blue;
+            /* flex-grow: 4; */
+            /* Using flex-grow increse the speed of growing the box faster than other's & filling the left over space. */
+        }
+        #box3{
+            background-color: blueviolet;
+            /* order: -1; */
+            /* order is use to change the sequence of the */
+            align-self: center;
+            /* align-self is use to align the flex item along its cross axis i.e.. vertical in case of row. */
+        }
+        #box4{
+            background-color: orange;
+            /* flex-basis: 400px; */
+            /* flex-basis use to set the initial size of the box. */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Box 1</div>
+        <div class="box" id="box2">Box 2</div>
+        <div class="box" id="box3">Box 3</div>
+        <div class="box" id="box4">Box 4</div>
+    </div>
+    <p>Flex items are:- </p>
+    <ol type="i">
+        <li>order</li>
+        <li>flex-grow</li>
+        <li>flex-shrink</li>
+        <li>flex-basis</li>
+        <li>flex (using shortcut-hand notation)</li>
+        <li>align-self</li>
+    </ol>
+    <p>Flex Container are:- </p>
+    <ol type="i">
+        <li>display</li>
+        <li>flex-direction</li>
+        <li>flex-shrink</li>
+        <li>flex-wrap</li>
+        <li>flex-flow</li>
+        <li>align-items</li>
+        <li>align-contents</li>
+        <li>justify-content</li>
+    </ol>
+</body>
+</html>

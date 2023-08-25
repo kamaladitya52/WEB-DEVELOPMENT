@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      /* Universal Selector
+       *{
+            padding: 0;
+            margin: 0;
+        } 
+    */
+      h1 {
+        background-color: aquamarine;
+        /* border-style: dotted;
+            border-color: brown;
+            border-width: 3px; */
+        border: solid brown 3px; /* Alternate method or shorthand method of defining border.*/
+        border-radius: 5px; /* Use to round the corner of the box.*/
+
+        width: 800px; /* For width of box. */
+        height: 100px; /* For height of box. */
+      }
+      span {
+        background-color: aqua;
+        border-style: dotted;
+        border-color: brown;
+        border-width: 5px;
+        width: 800px; /* Not Working */
+        height: 100px; /* Not Working */
+      }
+      .firstpara {
+        background-color: rgb(6, 203, 242);
+        /* border-style: solid;
+            border-color:rgb(13, 2, 65);
+            border-width: 2px; */
+        border-bottom: solid rgb(247, 24, 12) 4px; /*For specific border side.*/
+        /* border-radius: 10px; */
+        border-top-left-radius: 4px; /*For specific corner round.*/
+      }
+
+      .secondpara {
+        background-color: antiquewhite;
+        padding: 20px;
+        margin: 10px;
+        border: solid black 5px;
+      }
+      .thirdpara {
+        background-color: brown;
+        border: solid black 3px;
+        /* padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+            padding-left: 40px; */
+        padding: 10px 20px 30px 40px;
+        /* Another way of defining padding & margin. */
+
+        margin: 40px 20px;
+      }
+      .fourthpara {
+        background-color: rgb(44, 218, 9);
+        border: solid black 3px;
+        padding: 20px 40px;
+        /* 20 is for top and bottom and 40 is for left and right padding */
+        /* margin-top: 10px;
+            margin-bottom: 20px;
+            margin-left: 30px;
+            margin-right: 40px; */
+        margin: 10px 20px 30px 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+
+    <span>This is Span Tag.</span>
+
+    <p class="firstpara">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem distinctio
+      animi molestiae eum libero maxime blanditiis, repudiandae laudantium eius
+      quae voluptatibus facere laborum, sint at hic asperiores alias numquam?
+      Qui voluptatum rem, velit iste ipsa exercitationem veniam sapiente? Atque,
+      architecto?
+    </p>
+
+    <p class="secondpara">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio
+      consequuntur magnam, doloremque, excepturi maiores non animi, consequatur
+      nobis illum debitis culpa esse ex dolorum aliquid adipisci tempora aperiam
+      veniam temporibus.
+    </p>
+
+    <p class="thirdpara">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet soluta
+      similique unde cumque quia repellat laudantium, cum reiciendis ipsa eius.
+    </p>
+
+    <p class="fourthpara">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nesciunt
+      id ipsam in, doloribus hic pariatur commodi recusandae praesentium
+      asperiores dolore error cum harum suscipit alias repellendus dolor maiores
+      doloremque aut eveniet provident unde officiis necessitatibus nisi? Quae
+      consectetur deserunt, inventore velit quas nemo ipsam possimus, dolorem
+      fugiat, quod sapiente.
+    </p>
+  </body>
+</html>

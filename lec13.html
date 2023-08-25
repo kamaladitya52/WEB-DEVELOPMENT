@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style13.css">
+    <style>
+        /* Internal CSS */
+        
+        h1{
+            background-color: rgb(175, 6, 6);
+        }
+        /* This is Element Selector Defination. */
+        p{
+            font-size: smaller;
+            background-color: bisque;
+            /* font-size: smaller !important; */
+            /* Using "!important" gives highest preference.*/
+        }
+
+        /* This is the ID Selector Defination.*/
+        #para1{
+            font-size: medium;
+            background-color: rgb(14, 181, 181);
+        }
+         /* This is the Class Selector Defination*/
+        .paraarticleheading{
+            background-color: blueviolet;
+        }
+        /* This is the Group Selector Defination. */
+        article,h2{
+            width: 500px;
+        }
+        p.para{
+            font-size: small;
+            background-color: rgb(185, 129, 129);
+        }
+    </style>
+    
+    <!-- <link rel="stylesheet" href="style13.css"> -->
+    <!-- Order of Internal and External CSS also matters. -->
+
+</head>
+<body>
+    <h1>This is 1st Paragraph Heading.</h1>
+
+    <p style="font-size: xx-large;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, odio.</p>
+    
+    <h2>This is 2nd Paragraph Heading.</h2>
+
+    <p style="background-color: aquamarine;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quo impedit aut! Magni quisquam ullam accusantium qui maiores, mollitia quam.</p>
+    
+    <!-- Inline CSS -->
+    <h3 style="background-color: rgb(29, 226, 11);">This is 3rd Paragraph Heading.</h3>
+
+    <p style="font-size: xx-small;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem fuga, ratione esse magni amet nesciunt eaque ducimus velit, recusandae quaerat veniam in qui debitis? Sunt deleniti dignissimos dolore aspernatur magnam.</p>
+
+    <h1>Order of CSS Inline >> Internal CSS greater than or equal to External CSS(depends upon order of external CSS before or after internal CSS)</h1>
+
+    
+    <p style="font-size: large;">Note :- Use of  "!important" keyword in Internal CSS gives higher priority than Inline CSS</p>
+
+    <p id="para1">This is ID Selector.</p>
+    <p class="paraarticleheading"> This is Class Selector. </p>
+    <article class="paraarticleheading"> This is Class Selector. </article>
+    <h5 class="paraarticleheading"> This is Class Selector. </h5>
+
+    <p class="para"> This is Para Class </p>
+</body>
+</html>

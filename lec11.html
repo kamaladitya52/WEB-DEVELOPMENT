@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Audio and Video</title>
+</head>
+<body>
+    <header>BOOKMARK</header>
+    <main>
+        <ul>
+            <!-- Using # in src with section id "#<section_id>" -->
+            <li><a href="#image">Image</a></li>
+            <li><a href="#audio">Audio</a></li>
+            <li><a href="#video">video</a></li>
+            <li><a href="#iframe">Iframe</a></li>
+            <li><a href="#youtube">YT video</a></li>
+        </ul>
+        <section id="image">
+            <img src="logo.png" alt="Logo" height="200px" loading="lazy">
+        </section>
+        
+        
+        <br>
+        <section id="audio">
+            <!-- <audio src="audio.mp3" controls></audio> -->
+        <audio controls>
+            <source src="audio.mp3" type="audio/mp3">
+        </audio>
+        </section>
+        
+        
+        <br>
+        <section id="video">
+            <!-- <video src="video.mp4" controls height="300px"></video> -->
+        <video controls height="200px">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        
+        </section>
+        
+        <br>
+        <section id="iframe">
+            <iframe src="lec8.html" height="220px" width="500px" ></iframe>
+        
+        </section>
+        
+        <br>
+        <section id="youtube">
+            <!-- add "embed and remove ?v=" -->
+            <!-- can add "?autoplay=1&mute=1" -->
+            <iframe src="https://www.youtube.com/embed/B9UiGXcNT2A?mute=1&autoplay=1" width="500px" height="300px" ></iframe>
+        </section>
+    </main>
+    <footer> © 2003 copyright</footer>
+</body>
+</html>

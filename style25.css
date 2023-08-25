@@ -1,0 +1,32 @@
+.container{
+    width: 1250px;
+    height: 580px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    margin: auto;
+    width: 200px;
+    height: 200px;  
+    border-radius: 15px;      
+    background-color: maroon;
+}
+
+.box:hover{
+    width: 300px;
+    height: 300px;
+    border-radius: 85px;
+    background-color: rgb(227, 127, 11);
+    transition-property: all;
+    transform:rotate(-45deg);
+    /* transform: skew(45deg);  */
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-duration: 2s;
+
+    /* transition: all 3s linear 1s; */
+
+}

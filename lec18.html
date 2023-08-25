@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units</title>
+    <style>
+        /* *{
+            margin: 0px;
+            padding: 0px;
+        } */
+        .box{
+            border: 2px solid black;
+        }
+        .box1{
+            border: 2px solid red;
+            background-color: blue;
+             width: 50%;
+        }
+        .box2{
+            border: 3px solid green;
+            background-color:aqua;
+            width: 50%;
+            /* With respect to box1 class, it is 50% of its parent div. */
+        }
+        .container{
+            border: 1px solid blueviolet;
+            background-color:bisque;
+            height: 100vh;
+            width: 50vw;
+        }
+
+        .parent{
+            font-size: 1px;
+        }
+
+        .child{
+            font-size: 100em; 
+            /* em is with respect to its parent class. Here, 1 em is equal to 1px. so 100em means 100 px.Its value totally depends upon the parent class. If Parent class font size changes its child class font size also changes but the same thing is not happening in rem because its value is by default 1rem = 16pixel.*/
+
+            /* font-size: 10rem; */
+            /* rem is with respect to html tag. By default, 1 ream is equal to 16 pixel so 10 rem means 160 pixel. To view it inspect the web page. */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <p>Types of Units :- </p>
+    <ol>
+        <li>px (pixel)</li>
+        <li>% (percent)</li>
+        <li>vh (viewport height)</li>
+        <li>vw (viewport width)</li>
+    </ol> -->
+    <!-- <p>Relative Units are :-</p>
+    <ul>
+        <li>em (with respect to parent)</li>
+        <li>rem (with respect to root)</li>
+    </ul> -->
+
+    <p>1 pixel is equal to 1/96 inch.</p>
+
+    <div class="box">
+        Welcome to New World
+    </div>
+
+    <div class="box1">
+        <div class="box2">
+            Child
+        </div>
+    </div>
+
+    <div class="container">
+        Hello in this new world of web development.
+    </div>
+
+    <div class="parent">
+        <div class="child">
+            This is Child Class.
+        </div>
+    </div>
+</body>
+</html>

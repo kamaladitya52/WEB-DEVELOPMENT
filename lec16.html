@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispay Property</title>
+    <style>
+        /* h2{
+            border: 2px solid red;
+            margin: 40px;
+            padding: 70px;
+        }
+        p{
+            border: 2px solid green;
+            margin: 20px;
+            padding: 50px;
+        }
+        div{
+            border: 5px double blue;
+            height: 100px;
+            width: 200px;
+        } */
+
+        *{
+            /* margin: 0px;
+            padding: 0px;
+            box-sizing: border-box; */
+            /* "box-sizing: border-box" --> This is use to wrap the content without changing the dimension of the box.*/
+        }
+        .box{
+            /* display: inline; Behave like inline elements ( Use to convert block elements to inline elements explicitly.) */
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            /* Without using box-sizing --> size of box increase while using box-sizing size of box remains fix. Use Inspect to check it in web*/
+        }
+        span{
+            border: 2px solid blueviolet;
+            height: 200px; /* Not Working */
+            width: 500px;   /* Not Working */
+            margin: 10px; /* Not Working in up & bottom (i.e.. vertical direction margin not working ) & only horizontal direction margin working.  */
+            padding: 10px; /* Working */
+            /* display: block; Behave like block elements (Use to convert inline elements to block elements explicitly. ) */
+
+            /* display: inline-block;   */
+             /* Custom width,height,margin & padding is working now & behave like inline elements. Inline + (Custom height,width,margin & pading) */
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Block Elements</h1>
+    <ul>
+        <li>div</li>
+        <li>paragraph</li>
+        <li>h1</li>
+        <li>etc.</li>
+    </ul>
+    <h1>Properties of Block Elements</h1>
+    <ol type="i">
+        <li>Goes to New Line</li>
+        <li>Width from Extreme Left to Extreme Right</li>
+        <li>Custom Width & Height</li>
+        <li>Custom Margin & Padding</li>
+    </ol>
+    <h2>Welcome to CodeHelp Youtube Channel</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque quasi accusamus harum iusto labore ipsam culpa eius reprehenderit qui praesentium.</p>
+    <div>Hello, This is the Div Tag.</div> -->
+
+    <div class="box">
+        I am studying about the box box-sizing how its dimension changing.
+    </div>
+
+    <h3>Inline Elements  </h3>
+    <ul>
+        <li>a</li>
+        <li>span</li>
+        <li>etc.</li>
+    </ul>
+    <h3>Properties of Inline Elements. </h3>
+    <ol type="i">
+        <li>Be in same Line </li>
+        <li>width is equal to content width.</li>
+        <li>custom height & width not Working</li>
+        <li>Custom Margin not working for all direction only working in 2 direction.</li>
+        <li>padding is working.</li>
+    </ol>
+    <span>This is Aditya Kamal.</span>
+    <span>I am studying in KIIT.</span>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            margin: 1px;
+            padding: 1px;
+        }
+        .container{
+            width: 1250px;
+            height: 580px;
+            background-color: blanchedalmond;
+            border: 2px solid black;
+            /* display: flex;
+            flex-direction: column;
+            justify-content: center; */
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            border-radius: 100px;
+            background-color: rgb(38, 171, 237);
+            /* animation-name: change;
+            animation-duration: 5s;
+            animation-delay: 1s;
+            animation-timing-function: ease-in;
+            animation-fill-mode:forwards; */
+            animation: 10s ease-in-out 0s infinite alternate-reverse none running Movement;
+        
+
+        
+        /* animation-name: example;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate; */
+        
+        /* ShortHand of the Above Code */
+        /* animation: example 5s linear 2s infinite alternate; */
+
+        }
+
+
+
+        @keyframes change {
+            from{
+                top: 0px;
+                left: 15px;
+                
+            }
+            to{
+                top:0px;
+                left: 1145px;
+                
+            }
+        }
+
+        @keyframes circleMovement {
+           0% {
+            top: 1%;
+            left: 5%;
+           }
+           30% {
+            top: 5%;
+            left: 90%;
+           }
+
+           60% {
+            top: 70%;
+            left: 10%;
+           }
+           100%{
+            top: 75%;
+            left: 90%;
+           }
+        }
+        @keyframes Movement {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 0px;
+                left: 1145px;
+            }
+            50%{
+                top: 475px;
+                left: 1145px;
+            }
+            75%{
+                top: 475px;
+                left: 0px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+            
+        }
+            
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

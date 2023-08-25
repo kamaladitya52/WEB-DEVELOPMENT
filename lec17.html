@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <p>By default, position is static & all the four spacing property not working here. </p>
+    <style>
+        div{
+            border: 2px solid black;
+        }
+        img{
+            margin: 10px;
+        }
+
+        .img2{
+
+             /* position: relative;  */
+             /* Relative to current window. Using it does not free the space of the image2 and other image can not come in that place. Gap Maintaned */
+
+            /* Defining spacing using these four properties:- */
+            /* top: 100px;
+            left: 200px;
+            right: 300px;
+            bottom: 400px; */
+
+             /* position: absolute;  */
+             /*Using absolute free the current space so that other images overlap & shift to left. Gap not maintaned. It goes to closest ancestor. */
+
+             top: 300px;
+             /* This will down the image 2 from overlap position. All the above spacing properties works here. */ 
+
+        }
+        .container{
+            position: relative;
+            height: 1000px;
+            background-color: aqua;
+        }
+        .img4{
+            position: fixed;
+            /* "position: fixed" -> It fixed the image at the same place in the web page if we scroll the web page. */
+        }
+
+        .img3{
+             position: sticky; /*Related to parent property. */
+            /* Scroll the webpage to check difference between fixed and sticky. When we go to another container sticky is out of scope. but fixed remains same beacuse it is fixed throughout the web page */
+            top: 100px;
+        }
+
+        .box{
+            background-color: brown;
+            height: 3000px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <img 
+    src="img1.jpg" 
+    alt="Coffee"
+    width="275px"
+    height="300px"
+    class="img1"
+    >
+
+    <img 
+    src="img2.jpg" 
+    alt="Apples"
+    width="275px"
+    height="300px"
+    class="img2"
+    >
+
+    <img 
+    src="img3.jpg" 
+    alt="French Fries"
+    width="275px"
+    height="300px"
+    class="img3"
+    >
+
+    <img 
+    src="img4.jpg" 
+    alt="Orange"
+    width="275px"
+    height="300px"
+    class="img4"
+    >
+    
+    </div>
+
+    <div class="box">
+        
+    </div>
+</body>
+</html>
